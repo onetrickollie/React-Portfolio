@@ -238,14 +238,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex; /*jahn*/
+  display: flex; 
   min-height: 100vh; 
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(157, 153, 155, 0.5) -5.91%, rgba(35, 134, 162, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -302,61 +302,113 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
+/************  CsSkillss ************/
 .skill {
+  
+  background: linear-gradient(to bottom, rgb(66, 130, 239) 0%, rgb(245, 200, 110) 100%);
   padding: 0 0 50px 0;
   position: relative;
 }
+
 .skill-bx {
   background-image:url(./assets/img/MBBG4.jpg);
   background-repeat: no-repeat;
   background-size: cover; /* or contain depending on the desired effect */
   background-position: center; /* This centers the background image */
 
-  border-radius: 200px;
+  border-radius: 250px;
   text-align: center;
-  padding: px 50px;
-  margin-top: 10px;
+  padding: px 100px;
+  margin-top: 75px;
 }
 .skill h2 {
-	font-size: 45px;
+	font-size: 60px;
 	font-weight: 700;
 }
+.skill h5{
+  color:#1ffea8;
+   
+}
 .skill p {
-    color: #52aa80;
-    font-size: 18px;
+    color: #0b0505;
+    font-size: 25px;
     letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    line-height: 10em;
+    transform: translateY(-100px);
+   
 }
 .skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+  width: 100%;
+  margin: 5px;
+  position: center;
+  transform:translateY(-150px);
 }
 .skill-slider .item img {
   width: 50%;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 30px auto;
+ 
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+
+#meter1 {
+  width: 50%; /* Adjust width as necessary */
+  height: 180px; /* Set the desired height */
+  
 }
+
+#meter2 {
+  width: 50%; /* Adjust width as necessary */
+  height: 180px; /* Set a different height if needed */
+  
+}
+
+#meter3 {
+  width: 50%; /* Adjust width as necessary */
+  height: 181px; /* Set another height if needed */
+}
+.skill .tagline {
+  animation: fadeIn 2s ease-out;
+}
+
+.skill .tagline {
+  display: block;
+  background-color: rgba(154, 60, 60, 0.8); /* Keeps the semi-transparent white background */
+  color: #f6f6f6; /* Dark text for contrast */
+  font-size: 20px; /* Appropriate font size */
+  font-weight: 700; /* Bold text */
+  padding: 10px 20px; /* Padding for better visual spacing */
+  margin: 0 auto 20px; /* Centers the tagline and adds space below */
+  max-width: 60%; /* Limiting width to 60% of its container */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(55, 149, 166, 0.2); /* Subtle shadow for depth */
+  text-align: center; /* Centered text */
+}
+.skill .tagline {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  /* This creates a gradient that fades from semi-transparent white to fully transparent */
+}
+
+
+
 
 
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: rgb(179, 137, 137); /* You can keep or remove this depending on the gif visibility */
+  background-image: url('./assets/img/kirbyBG.gif'); /* Adjust the path as necessary */
+  background-size: cover; /* Ensure the background covers the entire element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
 }
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  padding: 10px 20px; /* Add padding to create some space around the text */
+  border-radius: 10px;
 }
 .project p {
   color: #B8B8B8;
@@ -366,13 +418,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  padding: 10px 20px; /* Add padding to create some space around the text */
+  border-radius: 10px; /* Optional: rounded corners for the background */
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(8, 4, 4, 0.1);
   overflow: hidden;
+  
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -396,7 +453,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #9d708c -5.91%, #9e31bc 110.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -424,7 +481,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
+  transform:translateX(100%);
 }
 .proj-imgbx::before {
   content: "";
@@ -472,16 +530,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.tab-two-image {
+  width: 28%; /* Adjust this value as needed */
+  height: auto; /* Keeps the aspect ratio intact */
+  display: block; /* Ensures the image is centered if less than 100% width */
+  margin: 0 auto; /* Centers the image horizontally */
+  border: 5px solid #020101; /* Solid white border, 2px thick */
+  border-radius: 15px;
+}
+
 
 /************ Projects Css ************/
 
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  
   padding: 60px 0 200px 0;
 }
 .contact img {
-  width: 92%;
+  width: 50%;
 }
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -546,85 +614,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-/************ Footer Css ************/
-.footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-.footer img {
-  width: 26%;
-}
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
-.large-header-img {
-  width: 100%; /* or any specific dimension */
-  height: auto; /* maintain aspect ratio */
-}
+
+

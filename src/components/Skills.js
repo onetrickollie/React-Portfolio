@@ -1,13 +1,9 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/BossJump.gif";
+import meter2 from "../assets/img/BossJump.gif";
+import meter3 from "../assets/img/BossJump.gif";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-/*newjahn*/
-import marioImg from "../assets/img/MBBG3.webp"
 
 export const Skills = () => {
   const responsive = {
@@ -31,33 +27,33 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>A Rundown On My Skillset<br></br></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Backend Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Game Development</h5>
-                            </div>
-            
-                        </Carousel>
-                    </div>
-                </div>
+<section className="skill" id="skills">
+  <div className="container">
+    <div className="row">
+      <div className="col-12">
+        <div className="skill-bx wow zoomIn">
+          <h2>Skills</h2>
+          <span className="tagline">A Rundown On My Skillset</span> {/* Added tagline */}
+          <p> Ratings</p>
+          <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+            <div className="item">
+              <img src={meter1} alt="Web Development Skill" id="meter1" />
+              <h5>Web Development</h5>
             </div>
+            <div className="item">
+              <img src={meter2} alt="Backend Development Skill" id="meter2" />
+              <h5>Backend Development</h5>
+            </div>
+            <div className="item">
+              <img src={meter3} alt="Game Development Skill" id="meter3" />
+              <h5>Game Development</h5>
+            </div>
+          </Carousel>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
-  )
+      </div>
+    </div>
+  </div>
+</section>
+
+  );
 }
