@@ -54,7 +54,9 @@ export const Projects = () => {
                           </Tab.Pane>
 
                     <Tab.Pane eventKey="third">
-                    <img src={projImg3} alt="Project Image 3" className="tab-two-image" />
+                      <a href ="https://www.youtube.com/watch?v=vLjaz5tJk3M&t=146s&ab_channel=BlacktopBuckets" target ="_blank" rel = "noopener noreferrer">
+                      <img src={projImg3} alt="Project Image 3" className="tab-two-image" />
+                      </a>
                       <p>Coming soon...</p>
                     </Tab.Pane>
                   </Tab.Content>
