@@ -1,6 +1,4 @@
-import meter1 from "../assets/img/BossJump.gif";
-import meter2 from "../assets/img/BossJump.gif";
-import meter3 from "../assets/img/BossJump.gif";
+import meter from "../assets/img/star.gif";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -37,16 +35,24 @@ export const Skills = () => {
           <p> Ratings</p>
           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
             <div className="item">
-              <img src={meter1} alt="Web Development Skill" id="meter1" />
+              <img src={meter} alt="Web Development Skill" id="meter1" />
               <h5>Web Development</h5>
             </div>
             <div className="item">
-              <img src={meter2} alt="Backend Development Skill" id="meter2" />
-              <h5>Backend Development</h5>
+              <img src={meter} alt="Backend Development Skill" id="meter2" />
+              <h5>Game Development</h5>
             </div>
             <div className="item">
-              <img src={meter3} alt="Game Development Skill" id="meter3" />
-              <h5>Game Development</h5>
+              <img src={meter} alt="Game Development Skill" id="meter3" />
+              <h5>Software Development</h5>
+            </div>
+            <div className="item">
+              <img src={meter} alt="Backend Development Skill" id="meter2" />
+              <h5>UI Design</h5>
+            </div>
+            <div className="item">
+              <img src={meter} alt="Backend Development Skill" id="meter2" />
+              <h5>Product Design</h5>
             </div>
           </Carousel>
         </div>

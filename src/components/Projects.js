@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/BossGame.png";
 import projImg2 from "../assets/img/SongSphere.png"; // Example image for Tab 2
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/sonic.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -45,6 +45,7 @@ export const Projects = () => {
                       </a>
                         <p>A pixel 2D game made in Unity</p>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="second">
                       <a href ="https://github.com/onetrickollie/SongSphere?tab=readme-ov-file" target ="_blank" rel = "noopener noreferrer">
                       <img src={projImg2} alt="Project Image 2" className="tab-two-image" />
@@ -53,7 +54,8 @@ export const Projects = () => {
                           </Tab.Pane>
 
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <img src={projImg3} alt="Project Image 3" className="tab-two-image" />
+                      <p>Coming soon...</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
