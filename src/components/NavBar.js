@@ -8,9 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-
 export const NavBar = () => {
-
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -50,9 +48,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/kaixiang-liu-2547a1200/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn Profile" /></a>
+                <a href="https://github.com/onetrickollie" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub Profile" /></a>
+                <a href="https://www.instagram.com/kai12oto/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Twitter Profile" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
