@@ -50,7 +50,7 @@ export const Projects = () => {
                       <a href ="https://github.com/onetrickollie/SongSphere?tab=readme-ov-file" target ="_blank" rel = "noopener noreferrer">
                       <img src={projImg2} alt="Project Image 2" className="tab-two-image" />
                       </a>
-                        <p>A spotify cloned with added features</p>
+                        <p>A spotify clone with added features</p>
                           </Tab.Pane>
 
                     <Tab.Pane eventKey="third">
